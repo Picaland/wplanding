@@ -27,9 +27,13 @@ if (! defined('ABSPATH')) {
     <!-- hero  -->
     <header id="wpl_hero" class="wpl-hero">
         <div class="wpl-hero-container container">
-            <h1 class="wpl-name col-md-12">
-                <img src="<?php echo esc_url(\WpLanding\AcfController::logo()); ?>" alt="logo">
-            </h1>
+            <?php
+            $imageLogoUrl = \WpLanding\AcfController::logo();
+            if ('#' !== $imageLogoUrl): ?>
+                <h1 class="wpl-name col-md-12">
+                    <img src="<?php echo $imageLogoUrl; ?>" alt="logo">
+                </h1>
+            <?php endif; ?>
             <div class="wpl-hero-text col-md-12">
                 <?php echo \WpLanding\AcfController::heroText(); ?>
                 <?php if ('' !== \WpLanding\AcfController::heroCtaText()) : ?>
@@ -59,7 +63,11 @@ if (! defined('ABSPATH')) {
     <!-- intro  -->
     <section id="wpl_center_page" class="wpl-center-page">
         <div class="wpl-center-page-image-wrapper">
-            <img src="<?php echo \WpLanding\AcfController::centerPageImageUrl(); ?>" alt="top-banner">
+            <?php
+            $imageUrl = \WpLanding\AcfController::centerPageImageUrl();
+            if ('#' !== $imageUrl): ?>
+                <img src="<?php echo $imageUrl; ?>" alt="top-banner">
+            <?php endif; ?>
             <div class="wpl-center-page-image-title">
                 <h3><?php echo \WpLanding\AcfController::centerPageTitle(); ?></h3>
             </div>
@@ -69,9 +77,13 @@ if (! defined('ABSPATH')) {
                 <?php echo \WpLanding\AcfController::centerPageText(); ?>
             </div>
         </div>
-        <div class="wpl-center-page-image-button-wrapper">
-            <img src="<?php echo \WpLanding\AcfController::centerPageImageAfterTextUrl(); ?>" alt="button-banner">
-        </div>
+        <?php
+        $imageButtonUrl = \WpLanding\AcfController::centerPageImageAfterTextUrl();
+        if ('#' !== $imageButtonUrl): ?>
+            <div class="wpl-center-page-image-button-wrapper">
+                <img src="<?php echo $imageButtonUrl; ?>" alt="button-banner">
+            </div>
+        <?php endif; ?>
     </section>
     <?php do_action('wpl_after_intro'); ?>
     <!-- benefits  -->
@@ -82,7 +94,7 @@ if (! defined('ABSPATH')) {
             </header>
             <div class="wpl-benefits-list-wrapper">
                 <?php do_action('wpl_benefits_before_list_content'); ?>
-                <?php if ('' !== \WpLanding\AcfController::benefitsList(false)) : ?>
+                <?php if (\WpLanding\AcfController::benefitsList(false)) : ?>
                     <?php echo \WpLanding\AcfController::benefitsList(); ?>
                 <?php endif; ?>
                 <?php do_action('wpl_benefits_after_list_content'); ?>
@@ -107,13 +119,13 @@ if (! defined('ABSPATH')) {
             <header class="wpl-testimonials-title">
                 <h2><?php echo \WpLanding\AcfController::testimonialsTitle(); ?></h2>
             </header>
-            <div class="wpl-testimonials-list-wrapper">
-                <?php do_action('wpl_testimonials_before_list_content'); ?>
-                <?php if ('' !== \WpLanding\AcfController::testimonialsList(false)) : ?>
+            <?php do_action('wpl_testimonials_before_list_content'); ?>
+            <?php if (\WpLanding\AcfController::testimonialsList(false)) : ?>
+                <div class="wpl-testimonials-list-wrapper">
                     <?php echo \WpLanding\AcfController::testimonialsList(); ?>
-                <?php endif; ?>
-                <?php do_action('wpl_testimonials_after_list_content'); ?>
-            </div>
+                </div>
+            <?php endif; ?>
+            <?php do_action('wpl_testimonials_after_list_content'); ?>
         </div>
     </section>
     <?php do_action('wpl_after_testimonials'); ?>

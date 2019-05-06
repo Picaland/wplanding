@@ -88,7 +88,7 @@ class AcfController
         $logo = self::getFields('header-logo', false, '', array());
         $logo = ! empty($logo) && is_array($logo) ? $logo['sizes']['large'] : '#';
 
-        return $logo;
+        return esc_url($logo);
     }
 
     /**
@@ -464,6 +464,7 @@ class AcfController
             $data->style      = "<style id='footer-style'>" .
                                 ".wpl-footer{{$footerBackground}}" .
                                 ".wpl-footer .wpl-footer-title, .wpl-footer .wpl-footer-left * {color:{$footerColor}!important;}" .
+                                ".wpl-footer .wpl-footer-right * {color:{$footerColor}" .
                                 "</style>";
         } else {
             $data->style = array(

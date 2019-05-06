@@ -74,7 +74,6 @@
 
     .wpl-center-page-image-title {
       position: absolute;
-      bottom: 0;
       left: 0;
       right: 0;
       text-align: center;
@@ -85,9 +84,11 @@
     }
   }
 
-  .wpl-center-page-image-button-wrapper {
-    margin-top: 4em;
+  .wpl-center-page-container {
+    padding: 2rem 0;
+  }
 
+  .wpl-center-page-image-button-wrapper {
     img {
       width: 100%;
     }
@@ -486,15 +487,11 @@
 // Media Query
 @media only screen and (min-width: 1280px) {
   .wpl-center-page .wpl-center-page-image-wrapper .wpl-center-page-image-title {
-    margin-bottom: 280px;
     font-size: 2.4rem;
   }
 }
 
 @media only screen and (max-width: 991px) {
-  .wpl-center-page .wpl-center-page-image-wrapper .wpl-center-page-image-title {
-    margin-bottom: 180px;
-  }
 
   .wpl-benefits ul.benefit-lists {
     display: block;
@@ -537,7 +534,6 @@
 
 @media only screen and (min-width: 468px) and (max-width: 768px) {
   .wpl-center-page .wpl-center-page-image-wrapper .wpl-center-page-image-title {
-    margin-bottom: 95px;
     font-size: 1.3rem;
   }
 }
@@ -557,7 +553,6 @@
   }
 
   .wpl-center-page .wpl-center-page-image-wrapper .wpl-center-page-image-title {
-    margin-bottom: 45px;
     font-size: 1rem;
   }
 }
