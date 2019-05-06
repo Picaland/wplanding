@@ -1,0 +1,5 @@
+{
+    "require": {
+        "stoutlogic/acf-builder": "^1.8"
+    }
+}

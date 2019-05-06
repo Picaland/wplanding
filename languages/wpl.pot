@@ -1,0 +1,224 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WPLanding\n"
+"POT-Creation-Date: 2019-05-06 12:39+0200\n"
+"PO-Revision-Date: 2017-01-08 19:27+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c;"
+"_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: vendor\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
+"X-Poedit-SearchPathExcluded-2: assets\n"
+
+#: inc/acf/acfTemplateFields.php:34
+msgid "Wp Landing options"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:38
+msgid "Header"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:40
+msgid "Logo"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:41
+msgid "Add the image logo for this page"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:42
+msgid "Hero background color"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:43
+msgid "Set the hero background color"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:44
+msgid "Hero background image"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:45
+msgid "Add the hero background image"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:47
+msgid "Set hero min height (min: 100) (default: 100vh)"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:49 inc/acf/acfTemplateFields.php:84
+#: inc/acf/acfTemplateFields.php:94
+msgid "Add the text for the section"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:50
+msgid "Hero text color"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:51
+msgid "Set the hero text color (for all text)"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:53 inc/acf/acfTemplateFields.php:99
+msgid "Add the text for the button"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:55 inc/acf/acfTemplateFields.php:101
+msgid "Add the url for the button"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:60
+msgid "Service"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:64
+msgid "Set list column (3: 4 cols | 4: 3 cols | 6: 2 cols)"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:66
+msgid "Add service"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:68
+msgid "Add the service icon"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:70
+msgid "Add the service title"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:72
+msgid "Add the service text"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:77
+msgid "Center page"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:79
+msgid "Center page image"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:80
+msgid "Add the image for the section"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:82
+msgid "Add the title for the section"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:85
+msgid "Image after text"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:86
+msgid "Add the image after text"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:91
+msgid "Benefits"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:97
+msgid "Add the benefits text"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:106
+msgid "Testimonials"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:108
+msgid "Testimonials background color"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:109
+msgid "Set the testimonials background color"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:110
+msgid "Testimonials background image"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:111
+msgid "Add the testimonials background image"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:115
+msgid "Add the testimonials avatar"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:117
+msgid "Add the testimonials name"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:119
+msgid "Add the testimonials text"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:124
+msgid "Footer"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:126
+msgid "Footer background color"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:127
+msgid "Set the footer background color"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:128
+msgid "Footer background image"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:129
+msgid "Add the footer background image"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:130
+msgid "Footer text color"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:131
+msgid "Set the footer text color (for all text)"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:133
+msgid "Add the footer title"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:135
+msgid "Add the footer left text"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:137
+msgid "Add the footer right text"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:142
+msgid "Colophon"
+msgstr ""
+
+#: inc/acf/acfTemplateFields.php:145
+msgid "Add the colophon text"
+msgstr ""
+
+#: inc/filtersFront.php:63
+msgid "Edit"
+msgstr ""
+
+#: src/Init.php:85 src/Init.php:97 src/Loader.php:130 src/Loader.php:142
+msgid "Cheatin&#8217; huh?"
+msgstr ""

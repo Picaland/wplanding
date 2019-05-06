@@ -1,0 +1,87 @@
+// Above the fold style
+@import "variable";
+
+html, body {
+  line-height: 1.2;
+  font-size: 1rem;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Libre Baskerville", Arial, serif;
+}
+
+p, li {
+  color: $gray-color;
+  line-height: 1.6rem;
+}
+
+hr {
+  height: 3px;
+  border: 0;
+  background-color: $primary-color;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+.btn.wpl-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 50px;
+}
+
+.btn.wpl-button.wpl-button-fill {
+  background-color: $primary-color;
+  color: $white-color;
+}
+
+.wpl-doc-wrapper {
+  .wpl-hero-container {
+    h1.wpl-name {
+      margin: 0;
+      text-align: center;
+      padding: 2rem 2rem 0;
+
+      img {
+        max-width: 250px;
+        width: 100%;
+      }
+    }
+
+    .wpl-hero-text {
+      padding: 2rem;
+      text-align: center;
+
+      * {
+        color: $white-color;
+      }
+
+      h1 {
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+        margin-bottom: 0.5em;
+      }
+
+      h2 {
+        font-size: 3.4rem;
+        line-height: 3.4rem;
+        margin-bottom: 0.5em;
+      }
+
+      h3 {
+        font-size: 2rem;
+        line-height: 2rem;
+      }
+
+      h4 {
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+      }
+
+      h5, h6 {
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+      }
+    }
+  }
+}
