@@ -79,8 +79,9 @@
       right: 0;
       text-align: center;
       color: $white-color;
-      margin-bottom: 200px;
       font-size: 2rem;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 

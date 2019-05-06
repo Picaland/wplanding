@@ -46,8 +46,9 @@
     right: 0;
     text-align: center;
     color: #fff;
-    margin-bottom: 200px;
-    font-size: 2rem; }
+    font-size: 2rem;
+    top: 50%;
+    transform: translateY(-50%); }
 .wpl-center-page .wpl-center-page-image-button-wrapper {
   margin-top: 4em; }
   .wpl-center-page .wpl-center-page-image-button-wrapper img {
