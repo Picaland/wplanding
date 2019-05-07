@@ -64,12 +64,40 @@ class PageTemplate
     }
 
     /**
+     * Remove Editor support for WpLanding template
+     */
+    public function removeEditor()
+    {
+        $id       = (int)filter_input(INPUT_GET, 'post', FILTER_SANITIZE_NUMBER_INT);
+        $template = $id ? get_post_meta($id, '_wp_page_template', true) : null;
+
+        if (isset($template) && 'templates/wpl.php' === $template) {
+            remove_post_type_support('page', 'editor');
+
+            add_action('admin_notices', function () { ?>
+                <div class="notice notice-info is-dismissible">
+                    <p><?php echo sprintf('<strong>%s</strong> %s',
+                            esc_html__('This is the WpLanding Template:', WPL_TEXTDOMAIN),
+                            esc_html__('The editor for this page has been deactivated!', WPL_TEXTDOMAIN)
+                        ); ?></p>
+                </div>
+            <?php });
+        }
+    }
+
+    /**
      * PageTemplate constructor.
      *
      * Initializes the plugin by setting filters and administration functions.
      */
     private function __construct()
     {
+        // Remove Editor support
+        add_action(
+            'admin_init',
+            array($this, 'removeEditor')
+        );
+
         // Add a filter to the attributes metabox to inject template into the cache.
         if (version_compare(floatval(get_bloginfo('version')), '4.7', '<')) {
             // 4.6 and older
