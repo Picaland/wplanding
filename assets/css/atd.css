@@ -13,7 +13,7 @@ p, li {
 hr {
   height: 3px;
   border: 0;
-  background-color: #be9359;
+  background-color: #dfab40;
   max-width: 300px;
   margin: 20px auto; }
 
@@ -23,7 +23,7 @@ hr {
   border-radius: 50px; }
 
 .btn.wpl-button.wpl-button-fill {
-  background-color: #be9359;
+  background-color: #dfab40;
   color: #fff;
   transition: all 300ms ease-in-out;
   -webkit-transition: all 300ms ease-in-out;
