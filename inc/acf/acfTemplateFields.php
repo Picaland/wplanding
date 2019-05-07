@@ -84,13 +84,15 @@ $wpLanding->addFields($service);
 // Center page Fields -------------------------------------------------------------------------------------------------//
 $centerPage = new FieldsBuilder('center_page', array('title' => esc_html__('Center page', WPL_TEXTDOMAIN)));
 $centerPage->addTab('Center page', ['placement' => 'left'])
-           ->addImage('center-page-image', ['label' => esc_html__('Center page image', WPL_TEXTDOMAIN)])
+           ->addImage('center-page-image', ['label' => esc_html__('Center page Top image banner', WPL_TEXTDOMAIN)])
            ->setInstructions(esc_html__('Add the image for the section', WPL_TEXTDOMAIN))
+           ->addColorPicker('center-page-title-color', ['label' => esc_html__('Center page title color', WPL_TEXTDOMAIN)])
+           ->setInstructions(esc_html__('Set the title color', WPL_TEXTDOMAIN))
            ->addText('center-page-title', ['label' => 'Center page title'])
            ->setInstructions(esc_html__('Add the title for the section', WPL_TEXTDOMAIN))
            ->addWysiwyg('center-page-text', ['label' => 'Center page  text'])
            ->setInstructions(esc_html__('Add the text for the section', WPL_TEXTDOMAIN))
-           ->addImage('center-page-image-button', ['label' => esc_html__('Image after text', WPL_TEXTDOMAIN)])
+           ->addImage('center-page-image-button', ['label' => esc_html__('Center page Button image banner', WPL_TEXTDOMAIN)])
            ->setInstructions(esc_html__('Add the image after text', WPL_TEXTDOMAIN));
 
 $wpLanding->addFields($centerPage);

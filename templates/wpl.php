@@ -68,6 +68,9 @@ if (! defined('ABSPATH')) {
             if ('#' !== $imageUrl): ?>
                 <img src="<?php echo $imageUrl; ?>" alt="top-banner">
             <?php endif; ?>
+            <?php
+            // Scoped style
+            echo \WpLanding\AcfController::centerPage()->style; ?>
             <div class="wpl-center-page-image-title">
                 <h3><?php echo \WpLanding\AcfController::centerPageTitle(); ?></h3>
             </div>
@@ -138,11 +141,13 @@ if (! defined('ABSPATH')) {
             <div class="wpl-footer-title col-md-12">
                 <h2><?php echo \WpLanding\AcfController::footerTitle(); ?></h2>
             </div>
-            <div class="col-md-6 wpl-footer-left">
-                <?php echo \WpLanding\AcfController::footerLeft(); ?>
-            </div>
-            <div class="col-md-6 wpl-footer-right">
-                <?php echo \WpLanding\AcfController::footerRight(); ?>
+            <div class="row">
+                <div class="col-md-6 wpl-footer-left">
+                    <?php echo \WpLanding\AcfController::footerLeft(); ?>
+                </div>
+                <div class="col-md-6 wpl-footer-right">
+                    <?php echo \WpLanding\AcfController::footerRight(); ?>
+                </div>
             </div>
         </div>
         <?php do_action('wpl_after_footer_container'); ?>

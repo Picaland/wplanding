@@ -57,14 +57,6 @@ if (! is_admin() && is_page_template('templates/wpl.php')) {
             'position' => 'wpl_head',
         ),
         array(
-            'handle'   => 'wpl-bootstrap_style',
-            'file'     => \WpLanding\Plugin::getPluginDirUrl('assets/css/bootstrap.min.css'),
-            'deps'     => array(),
-            'ver'      => $dev ? time() : WPL_VERSION,
-            'media'    => 'all',
-            'position' => 'wpl_head',
-        ),
-        array(
             'handle'   => 'wpl-atd_style',
             'file'     => \WpLanding\Plugin::getPluginDirUrl('assets/css/atd.css'),
             'deps'     => array(),

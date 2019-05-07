@@ -264,6 +264,26 @@ class AcfController
     }
 
     /**
+     * addColorPicker
+     *
+     * @param bool $style
+     *
+     * @return \stdClass
+     */
+    public static function centerPage($style = true)
+    {
+        $centerPageTitleColor = self::getFields('center-page-title-color', false, '', '#fff');
+        $data                 = new \stdClass();
+        $data->style          = $centerPageTitleColor;
+
+        if ($style) {
+            $data->style = "<style id='center-page-style'>.wpl-center-page .wpl-center-page-image-wrapper .wpl-center-page-image-title h3{color:{$centerPageTitleColor};}</style>";
+        }
+
+        return $data;
+    }
+
+    /**
      * addWysiwyg
      *
      * @return string|null
