@@ -27,6 +27,10 @@ This section describes how to install the plugin and make it work.
 2. Enable <strong>WpLanding</strong> from the WordPress "Plugins" page.
 3. Create the page and assign the "WP Landing template" page template.
 
+## Performaces
+
+<img src="https://github.com/Picaland/wplanding/blob/master/wplanding-performance.jpg" alt="Wp Landing Performaces">
+
 ## Requirements
 
 * **Php** >= 5.6
