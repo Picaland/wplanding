@@ -127,7 +127,7 @@
     flex-wrap: wrap;
 
     li.benefit-item {
-      font-family: "Libre Baskerville", Arial, serif;
+      font-family: "Libre Baskerville", Arial, Helvetica, sans-serif;
       counter-increment: benefit-counter;
       flex: 1 0 50%;
       margin-bottom: 1em;
@@ -340,7 +340,7 @@
   input,
   select,
   textarea {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
     color: $gray-color;
   }
 
@@ -408,7 +408,7 @@
     input,
     select,
     textarea {
-      font-family: "Open Sans", Arial, sans-serif;
+      font-family: "Open Sans", Arial, Helvetica, sans-serif;
       font-size: 1rem;
       width: 100%;
       margin-bottom: 1em;

@@ -3604,7 +3604,7 @@ hr,
   width: 100%; }
 
 p.has-drop-cap:not(:focus)::first-letter {
-  font-family: 'Baskerville', Arial, Helvetica, sans-serif;
+  font-family: 'Libre Baskerville', Arial, Helvetica, sans-serif;
   font-size: 5.5rem;
   font-weight: 400;
   color: #dfab40; }
@@ -3680,7 +3680,7 @@ p.has-drop-cap:not(:focus)::first-letter {
     flex-direction: row;
     flex-wrap: wrap; }
     .wpl-benefits ul.benefit-lists li.benefit-item {
-      font-family: "Libre Baskerville", Arial, serif;
+      font-family: "Libre Baskerville", Arial, Helvetica, sans-serif;
       counter-increment: benefit-counter;
       flex: 1 0 50%;
       margin-bottom: 1em;
@@ -3819,7 +3819,7 @@ p.has-drop-cap:not(:focus)::first-letter {
   .wpl-footer input,
   .wpl-footer select,
   .wpl-footer textarea {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
     color: #909090; }
   .wpl-footer .wpl-footer-title {
     padding: 2rem 15px;
@@ -3868,7 +3868,7 @@ p.has-drop-cap:not(:focus)::first-letter {
   .wpl-footer .wpl-form input,
   .wpl-footer .wpl-form select,
   .wpl-footer .wpl-form textarea {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-size: 1rem;
     width: 100%;
     margin-bottom: 1em;
