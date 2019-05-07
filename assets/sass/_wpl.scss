@@ -214,7 +214,7 @@
           visibility: hidden;
           margin: 0 -310px !important;
           opacity: 0;
-          transition: all 300ms ease 0s;
+          transition: all 300ms ease-in-out;
           -webkit-transition: all 300ms ease-in-out;
           -moz-transition: all 300ms ease-in-out;
         }
@@ -361,6 +361,16 @@
       max-width: 300px;
       background-color: $dark-gray-color;
       color: $white-color;
+      transition: all 300ms ease-in-out;
+      -webkit-transition: all 300ms ease-in-out;
+      -moz-transition: all 300ms ease-in-out;
+
+      &:hover {
+        background-color: $black-color;
+        transition: all 300ms ease-in-out;
+        -webkit-transition: all 300ms ease-in-out;
+        -moz-transition: all 300ms ease-in-out;
+      }
 
       + .ajax-loader {
         position: absolute;
@@ -470,10 +480,16 @@
     padding: 0.8rem 1rem;
     background: $dark-gray-color;
     color: $white-color;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
 
     &:hover {
       background: $primary-color;
       text-decoration: none;
+      transition: all 300ms ease-in-out;
+      -webkit-transition: all 300ms ease-in-out;
+      -moz-transition: all 300ms ease-in-out;
     }
 
     &::after {

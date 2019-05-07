@@ -33,6 +33,16 @@ hr {
 .btn.wpl-button.wpl-button-fill {
   background-color: $primary-color;
   color: $white-color;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+
+  &:hover {
+    background-color: $dark-gray-color;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+  }
 }
 
 .wpl-doc-wrapper {

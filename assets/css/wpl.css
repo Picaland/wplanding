@@ -216,7 +216,7 @@ p.has-drop-cap:not(:focus)::first-letter {
       visibility: hidden;
       margin: 0 -310px !important;
       opacity: 0;
-      transition: all 300ms ease 0s;
+      transition: all 300ms ease-in-out;
       -webkit-transition: all 300ms ease-in-out;
       -moz-transition: all 300ms ease-in-out; }
     .wpl-testimonials #testimonials-list .owl-item .testimonial-card cite {
@@ -309,7 +309,15 @@ p.has-drop-cap:not(:focus)::first-letter {
     margin-top: 1em;
     max-width: 300px;
     background-color: #383838;
-    color: #fff; }
+    color: #fff;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out; }
+    .wpl-footer .wpl-form .wpcf7-submit:hover {
+      background-color: #252525;
+      transition: all 300ms ease-in-out;
+      -webkit-transition: all 300ms ease-in-out;
+      -moz-transition: all 300ms ease-in-out; }
     .wpl-footer .wpl-form .wpcf7-submit + .ajax-loader {
       position: absolute;
       display: none;
@@ -403,10 +411,16 @@ p.has-drop-cap:not(:focus)::first-letter {
   #wpl_edit_landing a.wpl-edit-landing-link {
     padding: 0.8rem 1rem;
     background: #383838;
-    color: #fff; }
+    color: #fff;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out; }
     #wpl_edit_landing a.wpl-edit-landing-link:hover {
       background: #be9359;
-      text-decoration: none; }
+      text-decoration: none;
+      transition: all 300ms ease-in-out;
+      -webkit-transition: all 300ms ease-in-out;
+      -moz-transition: all 300ms ease-in-out; }
     #wpl_edit_landing a.wpl-edit-landing-link::after {
       content: '\f044';
       font-family: "Font Awesome 5 Free", sans-serif;

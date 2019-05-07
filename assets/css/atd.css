@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Libre Baskerville", Arial, serif; }
 
 p, li {
-  color: #999;
+  color: #909090;
   line-height: 1.6rem; }
 
 hr {
@@ -24,7 +24,15 @@ hr {
 
 .btn.wpl-button.wpl-button-fill {
   background-color: #be9359;
-  color: #fff; }
+  color: #fff;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out; }
+  .btn.wpl-button.wpl-button-fill:hover {
+    background-color: #383838;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out; }
 
 .wpl-doc-wrapper .wpl-hero-container h1.wpl-name {
   margin: 0;
