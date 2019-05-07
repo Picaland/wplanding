@@ -5,3 +5,24 @@ $gray-color: #909090;
 $light-gray-color: #d4d4d4;
 $dark-gray-color: #383838;
 $black-color: #252525;
+
+// Spacing
+$spacer: 1rem !default;
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$grid-breakpoints: map-merge(
+    (
+      xs: 0,
+      sm: 576px,
+      md: 768px,
+      lg: 992px,
+      xl: 1200px
+    ),
+    $grid-breakpoints
+);

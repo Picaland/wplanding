@@ -1,6 +1,7 @@
 // WPL main style
 @import "variable";
 @import "mixin";
+@import "wp-classes";
 
 // Service
 .wpl-service {
@@ -12,19 +13,19 @@
     }
 
     h1 {
-      font-size: 4.5rem;
+      font-size: 4rem;
       line-height: 4rem;
       margin: 0.5em 0;
     }
 
     h2 {
-      font-size: 3.4rem;
+      font-size: 3rem;
       line-height: 3rem;
       margin: 0.5em 0;
     }
 
     h3 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       line-height: 2.5rem;
       margin: 0.5em 0;
     }
@@ -74,6 +75,7 @@
 
     .wpl-center-page-image-title {
       position: absolute;
+      padding: 0 1rem;
       left: 0;
       right: 0;
       text-align: center;
@@ -128,7 +130,7 @@
       padding-right: 2rem;
 
       &::before {
-        background-color: $gray-color;
+        background-color: $primary-color;
         content: "." counter(benefit-counter);
         color: $white-color;
         font-weight: bold;
@@ -205,12 +207,12 @@
       .testimonial-card {
         .testimonial-item-text {
           padding-top: 2rem;
-          width: 620px;
+          width: 620px !important;
           position: relative;
-          left: 50%;
+          left: 50% !important;
           text-align: center;
           visibility: hidden;
-          margin: 0 -310px;
+          margin: 0 -310px !important;
           opacity: 0;
           transition: all 300ms ease 0s;
           -webkit-transition: all 300ms ease-in-out;
@@ -394,6 +396,7 @@
       border-radius: 1em;
       border: 0;
       padding: 0.6rem;
+      color: $gray-color;
     }
 
     textarea {
@@ -485,13 +488,16 @@
 }
 
 // Media Query
-@media only screen and (min-width: 1280px) {
+@include media-breakpoint-up(xl) {
   .wpl-center-page .wpl-center-page-image-wrapper .wpl-center-page-image-title {
     font-size: 2.4rem;
   }
 }
 
-@media only screen and (max-width: 991px) {
+@include media-breakpoint-down(lg) {
+  .wpl-hero {
+    min-height: 100%;
+  }
 
   .wpl-benefits ul.benefit-lists {
     display: block;
@@ -503,8 +509,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
-
+@include media-breakpoint-up(md) {
   .wpl-doc-wrapper .wpl-hero-container {
     .wpl-hero-text {
       padding: 2rem 0;
@@ -532,14 +537,13 @@
   }
 }
 
-@media only screen and (min-width: 468px) and (max-width: 768px) {
+@include media-breakpoint-between(sm, md) {
   .wpl-center-page .wpl-center-page-image-wrapper .wpl-center-page-image-title {
     font-size: 1.3rem;
   }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 467px) {
-
+@include media-breakpoint-between(xs, sm) {
   .wpl-footer .wpl-form .wpcf7-submit + .ajax-loader {
     position: relative;
     right: 0;
