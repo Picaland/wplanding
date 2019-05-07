@@ -207,6 +207,7 @@ final class Resources
             foreach ($scripts as $script) {
                 if ($currentFilter === $script['position']) {
 
+                    $async     = isset($script['async']) && true === $script['async'] ? ' async="async"' : '';
                     $pathInfo  = pathinfo($script['file']);
                     $extension = isset($pathInfo['extension']) ? $pathInfo['extension'] : 'js';
 
@@ -224,7 +225,7 @@ final class Resources
                         echo "/* ]]> */</script>\n";
                     }
 
-                    echo "<script type='text/javascript' id='{$script['handle']}-script' src='{$file}?{$script['ver']}'></script>\n";
+                    echo "<script type='text/javascript' id='{$script['handle']}-script' src='{$file}?{$script['ver']}'{$async}></script>\n";
                 }
             }
         }

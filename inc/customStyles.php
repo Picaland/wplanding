@@ -41,22 +41,6 @@ if (! is_admin() && is_page_template('templates/wpl.php')) {
     $styles = array_merge($styles, array(
         // Head
         array(
-            'handle'   => 'wpl-font_style',
-            'file'     => 'https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Open+Sans:400,700',
-            'deps'     => array(),
-            'ver'      => $dev ? time() : WPL_VERSION,
-            'media'    => 'all',
-            'position' => 'wpl_head',
-        ),
-        array(
-            'handle'   => 'wpl-fa_icon_style',
-            'file'     => 'https://use.fontawesome.com/releases/v5.6.1/css/all.css',
-            'deps'     => array(),
-            'ver'      => $dev ? time() : WPL_VERSION,
-            'media'    => 'all',
-            'position' => 'wpl_head',
-        ),
-        array(
             'handle'   => 'wpl-atd_style',
             'file'     => \WpLanding\Plugin::getPluginDirUrl('assets/css/atd.css'),
             'deps'     => array(),
@@ -65,6 +49,22 @@ if (! is_admin() && is_page_template('templates/wpl.php')) {
             'position' => 'wpl_head',
         ),
         // Footer
+        array(
+            'handle'   => 'wpl-font_style',
+            'file'     => 'https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Open+Sans:400,700',
+            'deps'     => array(),
+            'ver'      => $dev ? time() : WPL_VERSION,
+            'media'    => 'all',
+            'position' => 'wpl_footer',
+        ),
+        array(
+            'handle'   => 'wpl-fa_icon_style',
+            'file'     => 'https://use.fontawesome.com/releases/v5.6.1/css/all.css',
+            'deps'     => array(),
+            'ver'      => $dev ? time() : WPL_VERSION,
+            'media'    => 'all',
+            'position' => 'wpl_footer',
+        ),
         array(
             'handle'   => 'wpl-main_style',
             'file'     => \WpLanding\Plugin::getPluginDirUrl('assets/css/wpl.css'),
@@ -79,7 +79,7 @@ if (! is_admin() && is_page_template('templates/wpl.php')) {
             'deps'     => array(),
             'ver'      => $dev ? time() : WPL_VERSION,
             'media'    => 'all',
-            'position' => 'wpl_head',
+            'position' => 'wpl_footer',
         ),
     ));
 }
