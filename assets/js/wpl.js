@@ -35,30 +35,32 @@
             this.setAttribute('data-position', index);
         });
 
-        $(testimonials).owlCarousel({
-            center: true,
-            dots: false,
-            nav: true,
-            items: 3,
-            autoplay: true,
-            autoHeight: false,
-            autoplayHoverPause: true,
-            loop: true,
-            lazyLoad: true,
-            smartSpeed: 600,
-            navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
-            margin: 10,
-            responsiveRefreshRate: 100,
-            responsive: {
-                0: {
-                    items: 1,
-                    nav: false,
-                    dots: false,
+        document.addEventListener('DOMContentLoaded', function () {
+            $(testimonials).owlCarousel({
+                center: true,
+                dots: false,
+                nav: true,
+                items: 3,
+                autoplay: true,
+                autoHeight: false,
+                autoplayHoverPause: true,
+                loop: true,
+                lazyLoad: true,
+                smartSpeed: 600,
+                navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+                margin: 10,
+                responsiveRefreshRate: 100,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false,
+                        dots: false,
+                    },
+                    768: {
+                        items: 3,
+                    }
                 },
-                768: {
-                    items: 3,
-                }
-            },
+            });
         });
 
         $(document).on('click', '.owl-item > div', function () {

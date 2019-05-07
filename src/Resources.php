@@ -207,7 +207,15 @@ final class Resources
             foreach ($scripts as $script) {
                 if ($currentFilter === $script['position']) {
 
-                    $async     = isset($script['async']) && true === $script['async'] ? ' async="async"' : '';
+                    // Attr async and defer
+                    $async = isset($script['async']) && true === $script['async'] ? ' async="async"' : '';
+                    $defer = isset($script['defer']) && true === $script['defer'] ? ' defer="defer"' : '';
+
+                    // Force async if both are set
+                    if ('' !== $async) {
+                        $defer = '';
+                    }
+
                     $pathInfo  = pathinfo($script['file']);
                     $extension = isset($pathInfo['extension']) ? $pathInfo['extension'] : 'js';
 
@@ -225,7 +233,7 @@ final class Resources
                         echo "/* ]]> */</script>\n";
                     }
 
-                    echo "<script type='text/javascript' id='{$script['handle']}-script' src='{$file}?{$script['ver']}'{$async}></script>\n";
+                    echo "<script type='text/javascript' id='{$script['handle']}-script' src='{$file}?{$script['ver']}'{$async}{$defer}></script>\n";
                 }
             }
         }
