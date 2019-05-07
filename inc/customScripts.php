@@ -54,7 +54,6 @@ if (! is_admin() && is_page_template('templates/wpl.php')) {
             'deps'     => array(),
             'ver'      => $dev ? time() : WPL_VERSION,
             'position' => 'wpl_footer',
-            'async'    => true,
         ),
         array(
             'handle'   => 'wpl-main',
