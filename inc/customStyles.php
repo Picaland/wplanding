@@ -42,7 +42,7 @@ if (! is_admin() && is_page_template('templates/wpl.php')) {
         // Head
         array(
             'handle'   => 'wpl-atd_style',
-            'file'     => \WpLanding\Plugin::getPluginDirUrl('assets/css/atd.css'),
+            'file'     => \WpLanding\Plugin::getPluginDirUrl('assets/css/atf.css'),
             'deps'     => array(),
             'ver'      => $dev ? time() : WPL_VERSION,
             'media'    => 'all',
