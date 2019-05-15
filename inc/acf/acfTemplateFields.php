@@ -126,7 +126,8 @@ if (class_exists('acf_pro')) {
             ->addText('service-title')
             ->setInstructions(esc_html__('Add the service title', WPL_TEXTDOMAIN))
             ->addWysiwyg('service-text')
-            ->setInstructions(esc_html__('Add the service text', WPL_TEXTDOMAIN));
+            ->setInstructions(esc_html__('Add the service text', WPL_TEXTDOMAIN))
+            ->endRepeater();
 }
 
 $wpLanding->addFields($service);
@@ -185,7 +186,8 @@ if (class_exists('acf_pro')) {
         ]
     )
              ->addWysiwyg('benefits-item')
-             ->setInstructions(esc_html__('Add the benefits text', WPL_TEXTDOMAIN));
+             ->setInstructions(esc_html__('Add the benefits text', WPL_TEXTDOMAIN))
+             ->endRepeater();
 }
 
 $benefits->addText('benefits-button-text',
@@ -236,7 +238,8 @@ if (class_exists('acf_pro')) {
                  ->addText('testimonials-name')
                  ->setInstructions(esc_html__('Add the testimonials name', WPL_TEXTDOMAIN))
                  ->addWysiwyg('testimonials-text')
-                 ->setInstructions(esc_html__('Add the testimonials text', WPL_TEXTDOMAIN));
+                 ->setInstructions(esc_html__('Add the testimonials text', WPL_TEXTDOMAIN))
+                 ->endRepeater();
 }
 
 $wpLanding->addFields($testimonials);

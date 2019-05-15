@@ -84,7 +84,7 @@ class Init
      */
     public function __wakeup()
     {
-        trigger_error(esc_html__('Cheatin&#8217; huh?', CWPL_TEXTDOMAIN), E_USER_ERROR);
+        trigger_error(esc_html__('Cheatin&#8217; huh?', WPL_TEXTDOMAIN), E_USER_ERROR);
     }
 
     /**
@@ -96,7 +96,7 @@ class Init
      */
     public function __clone()
     {
-        trigger_error(esc_html__('Cheatin&#8217; huh?', CWPL_TEXTDOMAIN), E_USER_ERROR);
+        trigger_error(esc_html__('Cheatin&#8217; huh?', WPL_TEXTDOMAIN), E_USER_ERROR);
     }
 
     /**
