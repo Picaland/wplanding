@@ -1,6 +1,11 @@
 {
-    "require": {
-        "stoutlogic/acf-builder": "^1.8",
-        "twbs/bootstrap": "4.3.1"
+  "config": {
+    "platform": {
+      "php": "5.6.3"
     }
+  },
+  "require": {
+    "stoutlogic/acf-builder": "^1.8",
+    "twbs/bootstrap": "4.3.1"
+  }
 }
