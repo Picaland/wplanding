@@ -44,6 +44,30 @@ $header = new FieldsBuilder('header',
 );
 
 $header->addTab(esc_html__('Header Hero', WPL_TEXTDOMAIN), ['placement' => 'left'])
+       ->addTrueFalse('disable-wp_head',
+           [
+               'label'       => esc_html__('Disable wp_head()', WPL_TEXTDOMAIN),
+               'ui'          => 1,
+               'ui_on_text'  => esc_html__('Yes', WPL_TEXTDOMAIN),
+               'ui_off_text' => esc_html__('No', WPL_TEXTDOMAIN),
+           ]
+       )
+       ->setInstructions(esc_html__(
+               'Disable wp_head() for this page?',
+               WPL_TEXTDOMAIN)
+       )
+       ->addTrueFalse('disable-wp_footer',
+           [
+               'label'       => esc_html__('Disable wp_footer()', WPL_TEXTDOMAIN),
+               'ui'          => 1,
+               'ui_on_text'  => esc_html__('Yes', WPL_TEXTDOMAIN),
+               'ui_off_text' => esc_html__('No', WPL_TEXTDOMAIN),
+           ]
+       )
+       ->setInstructions(esc_html__(
+               'Disable wp_footer() for this page?',
+               WPL_TEXTDOMAIN)
+       )
        ->addImage('header-logo',
            [
                'label' => esc_html__('Logo', WPL_TEXTDOMAIN),

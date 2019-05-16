@@ -14,6 +14,9 @@ if (! defined('ABSPATH')) {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <?php _wp_render_title_tag(); ?>
     <?php
+    if (1 !== \WpLanding\AcfController::disableWpHead()) {
+        wp_head();
+    }
     // WPL head hook
     do_action('wpl_head');
     ?>
@@ -157,6 +160,9 @@ if (! defined('ABSPATH')) {
     </footer>
 </div>
 <?php
+if (1 !== \WpLanding\AcfController::disableWpFooter()) {
+    wp_footer();
+}
 // WPL footer hook
 do_action('wpl_footer');
 ?>

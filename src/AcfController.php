@@ -79,6 +79,44 @@ class AcfController
     }
 
     /**
+     * addTrueFalse
+     *
+     * @return int|string|null
+     */
+    public static function disableWpHead()
+    {
+        $disable = self::getFields(
+            'disable-wp_head',
+            false,
+            '',
+            false
+        );
+
+        $disable = true === $disable ? 1 : 0;
+
+        return $disable;
+    }
+
+    /**
+     * addTrueFalse
+     *
+     * @return int|string|null
+     */
+    public static function disableWpFooter()
+    {
+        $disable = self::getFields(
+            'disable-wp_footer',
+            false,
+            '',
+            false
+        );
+
+        $disable = true === $disable ? 1 : 0;
+
+        return $disable;
+    }
+
+    /**
      * addImage
      *
      * @return string|null
