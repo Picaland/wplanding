@@ -16,7 +16,7 @@ to change the directory from which to take the file. On your theme you should ha
 
 ## Dependence
 
-WpLanding requires pluign <strong>ACF Pro</strong> to correctly insert all the fields on the template page. 
+WpLanding requires plugin <a hrer="https://www.advancedcustomfields.com/"><strong>ACF Pro</strong></a> to correctly insert all the fields on the template page. 
 Using the <strong>ACF</strong> plugin, repeaters will not be displayed.
 
 ## Installation
