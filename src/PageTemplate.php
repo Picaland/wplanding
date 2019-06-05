@@ -54,7 +54,7 @@ class PageTemplate
      *
      * @return PageTemplate
      */
-    public static function get_instance()
+    public static function getInstance()
     {
         if (null == self::$instance) {
             self::$instance = new self();

@@ -69,7 +69,7 @@ add_action('plugins_loaded', function () {
     // Load plugin text-domain.
     load_plugin_textdomain('wpl', false, '/' . WPL_PLUGIN_DIR . '/languages/');
 
-    \WpLanding\PageTemplate::get_instance();
+    \WpLanding\PageTemplate::getInstance();
 
     $filters = array();
 
