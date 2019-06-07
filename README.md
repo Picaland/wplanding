@@ -4,7 +4,7 @@
 * **Stable tag:** 1.0.0
 * **Requires PHP:** 5.6
 * **License:** GPLv3.0 or later
-* **License URI:** http://www.gnu.org/licenses/gpl-2.0.html
+* **License URI:** https://www.gnu.org/licenses/gpl-3.0.en.html
 
 ## Description
 
