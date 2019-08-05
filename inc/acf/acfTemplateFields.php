@@ -123,6 +123,14 @@ $wpLanding->addFields($header);
 // Service Fields ---------------------------------------------------------------------------------------------------- //
 $service = new FieldsBuilder('service', array('title' => esc_html__('Service', WPL_TEXTDOMAIN)));
 $service->addTab('Service', ['placement' => 'left'])
+        ->addTrueFalse('disable-service',
+            [
+                'label'       => esc_html__('Disable service section?', WPL_TEXTDOMAIN),
+                'ui'          => 1,
+                'ui_on_text'  => esc_html__('Yes', WPL_TEXTDOMAIN),
+                'ui_off_text' => esc_html__('No', WPL_TEXTDOMAIN),
+            ]
+        )
         ->addWysiwyg('services-header-text',
             [
                 'label' => esc_html__('Service header text', WPL_TEXTDOMAIN),
@@ -159,6 +167,14 @@ $wpLanding->addFields($service);
 // Center page Fields -------------------------------------------------------------------------------------------------//
 $centerPage = new FieldsBuilder('center_page', array('title' => esc_html__('Center page', WPL_TEXTDOMAIN)));
 $centerPage->addTab('Center page', ['placement' => 'left'])
+           ->addTrueFalse('disable-center_page',
+               [
+                   'label'       => esc_html__('Disable center page section?', WPL_TEXTDOMAIN),
+                   'ui'          => 1,
+                   'ui_on_text'  => esc_html__('Yes', WPL_TEXTDOMAIN),
+                   'ui_off_text' => esc_html__('No', WPL_TEXTDOMAIN),
+               ]
+           )
            ->addImage('center-page-image',
                [
                    'label' => esc_html__('Center page Top image banner', WPL_TEXTDOMAIN),
@@ -195,6 +211,14 @@ $wpLanding->addFields($centerPage);
 // Benefits Fields --------------------------------------------------------------------------------------------------- //
 $benefits = new FieldsBuilder('benefits', array('title' => esc_html__('Benefits', WPL_TEXTDOMAIN)));
 $benefits->addTab('Benefits', ['placement' => 'left'])
+         ->addTrueFalse('disable-benefits',
+             [
+                 'label'       => esc_html__('Disable benefits section?', WPL_TEXTDOMAIN),
+                 'ui'          => 1,
+                 'ui_on_text'  => esc_html__('Yes', WPL_TEXTDOMAIN),
+                 'ui_off_text' => esc_html__('No', WPL_TEXTDOMAIN),
+             ]
+         )
          ->addWysiwyg('benefits-header-text',
              [
                  'label' => esc_html__('Benefits text', WPL_TEXTDOMAIN),
@@ -232,6 +256,14 @@ $wpLanding->addFields($benefits);
 // Testimonials Fields ----------------------------------------------------------------------------------------------- //
 $testimonials = new FieldsBuilder('testimonials', array('title' => esc_html__('Testimonials', WPL_TEXTDOMAIN)));
 $testimonials->addTab('Testimonials', ['placement' => 'left'])
+             ->addTrueFalse('disable-testimonials',
+                 [
+                     'label'       => esc_html__('Disable testimonials section?', WPL_TEXTDOMAIN),
+                     'ui'          => 1,
+                     'ui_on_text'  => esc_html__('Yes', WPL_TEXTDOMAIN),
+                     'ui_off_text' => esc_html__('No', WPL_TEXTDOMAIN),
+                 ]
+             )
              ->addColorPicker('testimonials-bgcolor',
                  [
                      'label' => esc_html__('Testimonials background color', WPL_TEXTDOMAIN),
@@ -271,6 +303,14 @@ $wpLanding->addFields($testimonials);
 // Footer Fields ----------------------------------------------------------------------------------------------------- //
 $footer = new FieldsBuilder('footer', array('title' => esc_html__('Footer', WPL_TEXTDOMAIN)));
 $footer->addTab('Footer', ['placement' => 'left'])
+       ->addTrueFalse('disable-footer',
+           [
+               'label'       => esc_html__('Disable footer section?', WPL_TEXTDOMAIN),
+               'ui'          => 1,
+               'ui_on_text'  => esc_html__('Yes', WPL_TEXTDOMAIN),
+               'ui_off_text' => esc_html__('No', WPL_TEXTDOMAIN),
+           ]
+       )
        ->addColorPicker('footer-bgcolor',
            [
                'label' => esc_html__('Footer background color', WPL_TEXTDOMAIN),
@@ -313,6 +353,14 @@ $wpLanding->addFields($footer);
 // Colophon Fields --------------------------------------------------------------------------------------------------- //
 $colophon = new FieldsBuilder('colophon', array('title' => esc_html__('Colophon', WPL_TEXTDOMAIN)));
 $colophon->addTab('Colophon', ['placement' => 'left'])
+         ->addTrueFalse('disable-colophon',
+             [
+                 'label'       => esc_html__('Disable colophon section?', WPL_TEXTDOMAIN),
+                 'ui'          => 1,
+                 'ui_on_text'  => esc_html__('Yes', WPL_TEXTDOMAIN),
+                 'ui_off_text' => esc_html__('No', WPL_TEXTDOMAIN),
+             ]
+         )
          ->addText('colophon-text',
              [
                  'label' => esc_html__('Colophon line', WPL_TEXTDOMAIN),

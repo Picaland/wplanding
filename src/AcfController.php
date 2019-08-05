@@ -117,6 +117,27 @@ class AcfController
     }
 
     /**
+     * Disable helper
+     *
+     * @param $key
+     *
+     * @return int|string|null
+     */
+    public static function disable($key)
+    {
+        $disable = self::getFields(
+            "disable-{$key}",
+            false,
+            '',
+            false
+        );
+
+        $disable = true === $disable ? 1 : 0;
+
+        return $disable;
+    }
+
+    /**
      * addImage
      *
      * @return string|null

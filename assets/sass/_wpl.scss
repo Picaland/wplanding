@@ -331,7 +331,9 @@
 
 // Footer
 .wpl-footer {
-  min-height: 250px;
+  background-color: transparent;
+  padding: 0;
+  color: initial;
 
   .wpl-footer-container {
     padding: 2rem 15px 4rem 15px;

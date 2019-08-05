@@ -3813,7 +3813,9 @@ p.has-drop-cap:not(:focus)::first-letter {
       right: 0; }
 
 .wpl-footer {
-  min-height: 250px; }
+  background-color: transparent;
+  padding: 0;
+  color: initial; }
   .wpl-footer .wpl-footer-container {
     padding: 2rem 15px 4rem 15px; }
   .wpl-footer input,
