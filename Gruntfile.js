@@ -41,8 +41,8 @@ module.exports = function (grunt) {
                     noCache: true
                 },
                 files: {
-                    'assets/css/atd.min.css': 'assets/scss/atd.scss',
-                    'assets/css/wpl.min.css': 'assets/scss/wpl.scss',
+                    'assets/css/atd.min.css': 'assets/sass/atd.scss',
+                    'assets/css/wpl.min.css': 'assets/sass/wpl.scss',
                 }
             }
         },
