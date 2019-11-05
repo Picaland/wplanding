@@ -145,7 +145,7 @@ final class Resources
          *
          * @since 1.0.0
          */
-        do_action('chatbot_link-after_admin_enqueue_scripts');
+        do_action('wpl-after_enqueue_scripts');
     }
 
     /**
