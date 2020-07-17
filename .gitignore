@@ -154,3 +154,6 @@ default.mo
 
 #PhpUnit
 coverage/
+
+#Sass cache
+.sass-cache/
